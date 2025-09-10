@@ -43,3 +43,20 @@ h1{font-size:clamp(28px,3.5vw,60px); line-height:1.1; margin:24px 0}
 
 /* Подвал */
 .site-footer{padding:40px 0; color:var(--muted)}
+
+.lead{
+  font-family: var(--font-family, system-ui);
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.4;     /* если в плагине Auto — подгони визуально */
+  color: var(--text, #111);
+  margin: 16px 0 20px;  /* отступы замерь Alt'ом и подставь точные */
+}
+
+.hero img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;   /* если в макете есть скругление */
+}

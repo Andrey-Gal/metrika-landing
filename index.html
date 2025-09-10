@@ -4,31 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>МЕТРИКА — студия интерьеров</title>
+  <meta name="description" content="Современные и стильные интерьеры для комфортной жизни. Студия «МЕТРИКА»." />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header container">
-    <div class="logo">МЕТРИКА</div>
+
+  <!-- Шапка -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">МЕТРИКА</a>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="hero container">
-  <h1>Современные и стильные интерьеры<br>для комфортной жизни</h1>
+  <!-- Контент -->
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1>
+          Современные и стильные интерьеры<br />
+          для комфортной жизни
+        </h1>
 
-  <a class="btn" href="#">Показать услуги</a>
+        <a class="btn" href="#services">Показать услуги</a>
 
-  <figure class="hero__media">
-    <img
-      src="assets/img/hero.png"
-      alt="Интерьер студии"
-      width="1200" height="600"
-      loading="lazy" decoding="async"
-    />
-  </figure>
-</section>
+        <figure class="hero__media">
+          <img
+            src="assets/img/hero.png"
+            alt="Интерьер студии МЕТРИКА"
+            width="1200"
+            height="600"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
 
+        <p class="lead">
+          Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров.
+          К нам обращаются за уютом, индивидуальными решениями и практичностью. Находим конструктивные
+          решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.
+        </p>
+      </div>
+    </section>
+
+    <!-- Заглушки для будущих блоков -->
+    <section id="services">
+      <div class="container">
+        <!-- услуги -->
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <!-- проекты -->
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer container">© МЕТРИКА</footer>
+  <!-- Подвал -->
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> МЕТРИКА
+    </div>
+  </footer>
+
+  <script>
+    // Год в футере
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
